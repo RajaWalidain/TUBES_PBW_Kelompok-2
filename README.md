@@ -15,11 +15,14 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 2. Student
 3. Admin
 
+
 ### Usecase
-![WhatsApp Image 2024-10-22 at 20 20 31_540e021a](https://github.com/user-attachments/assets/3aab7ffe-1ac0-4ac8-9c46-4dc658be4912)
+![USE CASE](https://github.com/user-attachments/assets/aa977bc9-bdee-4398-88c1-228dcd4d77ec)
+
 
 ### ERD
-TES BARU
+
 
 
 ### Class Diagram
+![Class Diagram](https://github.com/user-attachments/assets/f1733e4d-2eed-4f99-9821-6972065c7572)
