@@ -17,3 +17,7 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 
 ### Usecase
 ![WhatsApp Image 2024-10-22 at 20 20 31_540e021a](https://github.com/user-attachments/assets/3aab7ffe-1ac0-4ac8-9c46-4dc658be4912)
+
+### ERD
+
+### Class Diagram
