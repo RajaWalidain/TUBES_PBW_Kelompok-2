@@ -18,6 +18,7 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 
 ### Usecase
 ![USE CASE](https://github.com/user-attachments/assets/aa977bc9-bdee-4398-88c1-228dcd4d77ec)
+Usecase tersebut menggambarkan sistem pembelajaran online dengan 3 pengguna utama: Pelajar, Admin, dan Pengajar. Pelajar dapat mendaftar kursus, mengakses materi, dan mengerjakan tugas. Admin mengelola pengguna dan kursus serta sistem login. Pengajar bertugas membuat kursus, mengunggah materi, dan memberikan tugas serta penilaian. Semua aktivitas terhubung melalui sistem autentikasi.
 
 
 ### ERD
