@@ -15,11 +15,16 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 2. Student
 3. Admin
 
+
 ### Usecase
-![WhatsApp Image 2024-10-22 at 20 20 31_540e021a](https://github.com/user-attachments/assets/3aab7ffe-1ac0-4ac8-9c46-4dc658be4912)
+![USE CASE](https://github.com/user-attachments/assets/aa977bc9-bdee-4398-88c1-228dcd4d77ec)
+Usecase tersebut menggambarkan sistem pembelajaran online dengan 3 pengguna utama: Pelajar, Admin, dan Pengajar. Pelajar dapat mendaftar kursus, mengakses materi, dan mengerjakan tugas. Admin mengelola pengguna dan kursus serta sistem login. Pengajar bertugas membuat kursus, mengunggah materi, dan memberikan tugas serta penilaian. Semua aktivitas terhubung melalui sistem autentikasi.
 
 ### ERD
-TES BARU
+![ERD](https://github.com/user-attachments/assets/9e102313-f5d3-4f5e-b80b-4bdc999c493a)
+ERD ini menampilkan sistem pembelajaran online dengan 5 entitas utama: User (dengan atribut seperti UserID, nama, email, password, no HP, dan peran sebagai pengajar/pelajar/admin), Course (dengan detail courseID, judul, deskripsi, tanggal mulai/selesai, dan instrukturID), Materi (berisi materiID, courseID, judul, konten, dan tanggal unggah), Tugas (mencakup tugasID, courseID, judul, deskripsi, dan deadline), serta entitas penghubung berupa Pendaftaran (untuk mencatat registrasi course) dan Pengumpulan (untuk submission tugas). Setiap entitas saling terhubung melalui relasi yang menunjukkan interaksi antar komponen dalam sistem, seperti user memiliki course, course memiliki materi dan tugas, serta user melakukan pendaftaran dan pengumpulan tugas.
 
 
 ### Class Diagram
+![Class Diagram](https://github.com/user-attachments/assets/f1733e4d-2eed-4f99-9821-6972065c7572)
+Class Diagram ini menggambarkan sistem pembelajaran online dengan 6 kelas utama yang saling terhubung: User (pengguna sistem), Course (mata pelajaran), Materi (konten pembelajaran), Tugas (penugasan), Pendaftaran (registrasi kursus), dan Pengumpulan (submission tugas). User dapat mengajar atau mengikuti Course, di mana setiap Course memiliki Materi dan Tugas. Siswa dapat mendaftar ke Course melalui kelas Pendaftaran dan mengumpulkan tugas melalui kelas Pengumpulan. Setiap kelas memiliki atribut yang diperlukan (seperti ID, nama, tanggal, dll) dan method-method untuk mengelola datanya (seperti create, update, delete).
