@@ -16,8 +16,7 @@
                         <x-navbar.link href="/">Home</x-navbar.link>
                         <x-navbar.link href="{{ route('about') }}">About</x-navbar.link>
                         <x-navbar.link href="/contact">Contact</x-navbar.link>
-                        <x-navbar.link href="/gallery">Gallery</x-navbar.link>
-                        <x-navbar.link href="/course">Course</x-navbar.link>
+                        <x-navbar.link href="/course">Kelas Online</x-navbar.link>
                         @auth
                             <x-navbar.link href="{{ route('users.index') }}">Users</x-navbar.link>
                         @endauth

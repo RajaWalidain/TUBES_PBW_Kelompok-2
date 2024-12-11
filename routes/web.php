@@ -1,51 +1,61 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
-use App\Http\Controllers\Controller;
 
-// Route::get('/', function () {
-//     return view('home');
-// });
 
-// Route::get('/about', function() {
-//     return view('about');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', Controllers\HomeController::class);
+
+
+
+Route::get('/home', function () {
+    return view('home');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('courses', [Controllers\CourseController::class, 'index'])->name('courses.index');
+    Route::get('course/create', [Controllers\CourseController::class, 'create'])->name('courses.create');
+});
+
+Route::middleware(['auth', 'verified'])->group(function (){
+    Route::resource('courses', Controllers\CourseController::class)->except('index')->names([
+            'store' => 'courses.course']);
+});
+
+
 Route::get('/about', [Controllers\AboutController::class, 'index'])->name('about');
-Route::get('/contact', [Controllers\ContactController::class, 'index']);
-Route::get('/gallery', [Controllers\GalleryController::class, 'index']);
-
-Route::resource('users', Controllers\UserController::class)->middleware('auth');
-// Route::get('/users',[Controllers\UserController::class,'index']);
-// Route::get('/users/create', [Controllers\UserController::class,'create']);
-// Route::post('/users',[Controllers\UserController::class, 'store']);
-// Route::get('/users/{user:id}', [Controllers\UserController::class,'show']);
-// Route::get('/users/{user:id}/edit', [Controllers\UserController::class, 'edit']);
-// Route::put('/users/{user:id}', [Controllers\UserController::class, 'update']);
-// Route::delete('/users/{user:id}', [Controllers\UserController::class, 'destroy']);
-
-// Route::get('articles/create', function(){
-//     \App\Models\Article::create([
-//         'title' => $title = 'My First article',
-//         'slug' => str($title)->slug(),
-//         'body' => $body =  'This is the body of my first article',
-//         'teaser' => $teaser = str($body)->limit(160),
-//         'meta_title' => $title,
-//         'meta_description' => $teaser,
-//     ]);
-// });
-// Route::get('users', function () {
-//     $users = [
-//         ['id' => 1, 'name' => 'John Doe', 'email' => 'jane@parsinta.com'],
-//         ['id' => 2, 'name' => 'Jane  Doe', 'email' => 'jane@parsinta.com'],
-//     ];
-//     return view('users.index', compact('users'));
-// });
-
+Route::get('/contact', [Controllers\ContactController::class, 'index'])->name('contact');
+Route::get('/gallery', [Controllers\GalleryController::class, 'index'])->name('gallery');
+Route::resource('users', Controllers\UserController::class)->middleware(['auth','verified', 'role_or_permission:tambah-user|admin']);
 Route::get('login', [Controllers\LoginController::class, 'loginForm'])->name('login')->middleware('guest');
 Route::post('login', [Controllers\LoginController::class, 'authenticate'])->middleware('guest');
 Route::post('logout',Controllers\LogoutController::class)->name('logout')->middleware('auth');
-Route::get('/course', [Controllers\CourseController::class, 'index']);
-Route::get('/courses/{id}', [Controllers\CourseController::class, 'show'])->name('courses.show');
+Route::get('/course',   [Controllers\CourseController::class, 'index'])->name('course');
+Route::post('/users/course', [Controllers\UserController::class, 'course'])->name('users.course');
+
+Route::get('/courses/{id}', [Controllers\CourseController::class, 'showCourse'])->name('courses.show');
+Route::get('/courses/{id}/payment', [Controllers\CourseController::class, 'showPayment'])->name('courses.payment');
+
+
+Route::get('admin', function(){
+    return view('home');
+})->middleware(['auth', 'verified', 'role:admin']);
+
+Route::get('user', function(){
+    return view('home');
+})->middleware(['auth', 'verified', 'role:user']);
+
+Route::get('tulisan', function(){
+    return view('home');
+})->middleware(['auth', 'verified', 'permission:lihat-course']);
+
+
+
+require __DIR__.'/auth.php';

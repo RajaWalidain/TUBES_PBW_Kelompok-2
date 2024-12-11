@@ -29,13 +29,13 @@ class UserController extends Controller
             'page_meta' => [
                 'title' => 'Create new user',
                 'method' => 'post',
-                'url' => route('users.store'),
+                'url' => route('users.course'),
                 'submit_text' => 'Create'
             ]
         ]);
     }
 
-    public function store(UserRequest $request){
+    public function course(UserRequest $request){
         // $validated = $request->validate([
         //     'name' => ['required', 'min:3', 'max:255', 'string'],
         //     'email' => ['required', 'email'],

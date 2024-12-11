@@ -5,7 +5,7 @@
             <h1 class="text-5xl font-bold">Programming Tutors</h1>
             <h2 class="text-xl my-6">Tempat Belajar untuk Menjadi Software Development Expert yang Zaman Now Banget!</h2>
             <div>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg hover:text-black"><a href="">Gabung Kelas Online!</a></button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg hover:text-black"><a href="/course">Gabung Kelas Online!</a></button>
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
