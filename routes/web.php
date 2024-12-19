@@ -6,7 +6,7 @@ use App\Http\Controllers;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
@@ -14,7 +14,7 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -32,7 +32,7 @@ Route::middleware(['auth', 'verified'])->group(function (){
 
 Route::get('/about', [Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/contact', [Controllers\ContactController::class, 'index'])->name('contact');
-Route::get('/gallery', [Controllers\GalleryController::class, 'index'])->name('gallery');
+Route::get('/pemrograman', [Controllers\GalleryController::class, 'index'])->name('pemrograman');
 Route::resource('users', Controllers\UserController::class)->middleware(['auth','verified', 'role_or_permission:tambah-user|admin']);
 Route::get('login', [Controllers\LoginController::class, 'loginForm'])->name('login')->middleware('guest');
 Route::post('login', [Controllers\LoginController::class, 'authenticate'])->middleware('guest');

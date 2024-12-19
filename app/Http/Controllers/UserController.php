@@ -61,10 +61,10 @@ class UserController extends Controller
         return view('users/form', [
             'user' => $user,
             'page_meta' => [
-                'title' => 'Edit user: ' . $user->name,
+                'title' => 'Edit: ' . $user->name,
                 'method' => 'put',
                 'url' => route('users.update', $user),
-                'submit_text' => 'Update'
+                'submit_text' => 'Save'
             ]
         ]);
     }

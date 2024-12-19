@@ -48,7 +48,7 @@ class CourseController extends Controller
             'course' => $course,
             'page_meta' => [
                 'title' => 'Edit course',
-                'description' => 'Edit course: ' . $course->name,
+                'description' => 'Edit course: ' . $course->title,
                 'method' => 'put',
                 'url' => route('courses.update', $course),
             ]
@@ -57,8 +57,9 @@ class CourseController extends Controller
 
     public function update(CourseRequest $request, Course $course){
         $course->update([
-            'name' => $request->name,
+            'title' => $request->title,
             'description' => $request->description,
+            'price' => $request->price,
         ]);
 
         return to_route('courses.index');

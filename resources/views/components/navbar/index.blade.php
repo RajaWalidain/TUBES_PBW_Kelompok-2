@@ -81,7 +81,7 @@
                 <x-navbar.dropdown-item href="/">Home</x-navbar.dropdown-item>
                 <x-navbar.dropdown-item href="/about">About</x-navbar.dropdown-item>
                 <x-navbar.dropdown-item href="/contact">Contact</x-navbar.dropdown-item>
-                <x-navbar.dropdown-item href="/gallery">Gallery</x-navbar.dropdown-item>
+                <x-navbar.dropdown-item href="/pemrograman">Pemrograman</x-navbar.dropdown-item>
                 <x-navbar.dropdown-item href="/users">Users</x-navbar.dropdown-item>
                 <x-navbar.dropdown-item href="/course">Course</x-navbar.dropdown-item>
             </div>

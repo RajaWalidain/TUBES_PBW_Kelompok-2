@@ -1,6 +1,6 @@
 <x-app-layout title="Users">
     <x-slot name="heading">Users</x-slot>
-    <div class="container mx-auto p-8">
+    <div class="container mx-auto p-8 mt-16">
         <div class="text-center mb-12">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <x-section-title>

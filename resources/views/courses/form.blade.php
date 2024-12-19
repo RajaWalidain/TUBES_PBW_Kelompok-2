@@ -1,11 +1,10 @@
 <x-app-layout>
     @slot('title', 'Edit a course')
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight mt-16">
             {{ $page_meta['title'] }}
         </h2>
     </x-slot>
-
         <x-container>
             <div class="py-10 text-gray-900">
                 <x-card class="max-w">

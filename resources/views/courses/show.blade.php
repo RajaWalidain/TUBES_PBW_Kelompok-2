@@ -1,5 +1,5 @@
 <x-app-layout title="{{ $course->title }}">
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-8 mt-16">
         <h1 class="text-3xl font-bold mb-6">{{ $course->title }}</h1>
 
         <div class="flex flex-col md:flex-row gap-6">
