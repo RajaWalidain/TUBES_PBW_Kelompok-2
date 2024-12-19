@@ -40,7 +40,7 @@
         <div class="container mx-auto p-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold mb-6">Bidang Keahlian yang Bisa Anda Pelajari</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
                     <p class="font-semibold text-gray-700">Web development</p>
                 </div>

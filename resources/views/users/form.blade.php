@@ -1,6 +1,6 @@
 <x-app-layout title="{{ $page_meta['title'] }}">
     <x-slot name="heading">{{ $page_meta['title'] }}</x-slot>
-    <div class="container mx-auto p-8">
+    <div class="container mx-auto p-8 mt-16">
         <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
             <h2 class="text-xl font-bold text-gray-800 text-center mb-6">{{ $page_meta['title'] }}</h2>
             <form action="{{ $page_meta['url'] }}" method="post" novalidate class="space-y-6">

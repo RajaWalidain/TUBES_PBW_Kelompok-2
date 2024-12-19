@@ -1,6 +1,6 @@
 <x-app-layout title="User Details">
     <x-slot name="heading">{{ $user->name }}</x-slot>
-    <div class="container mx-auto p-8">
+    <div class="container mx-auto p-8 mt-16">
         <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
             <div class="text-center mb-6">
                 <h2 class="text-2xl font-bold text-gray-800">{{ $user->name }}</h2>
