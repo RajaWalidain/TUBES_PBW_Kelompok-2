@@ -95,9 +95,9 @@
         <div class="text-center max-w-4xl mx-auto mb-8">
             <h2 class="text-3xl font-bold mb-4">2000+ Murid Mendapatkan Keuntungan dari Kami</h2>
             <p class="text-gray-600 mb-6">Jadilah Murid yang Beruntung Selanjutnya, Mari Daftarkan Dirimu Segera</p>
-            <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg shadow-md">
+            <a href="{{ route('register') }}" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg shadow-md">
                 Daftar Sekarang 🔔
-            </button>
+            </a>
         </div>
     </div>
 
@@ -108,7 +108,7 @@
                 <div class="text-center">
                     <img src="https://pbs.twimg.com/media/GfKCaFPboAA6KfK?format=jpg&name=large" alt="Ale" class="w-32 h-32 rounded-full border-4 border-gray-300 shadow-lg object-cover mx-auto mb-4">
                     <p class="text-xl font-medium text-gray-700 mb-2">Malaekha Rafli lindan Iskandar</p>
-                    <p class="text-gray-600 mb-4">ADMINISTRATOR</p>
+                    <p class="text-gray-600 mb-4">TURUUUU</p>
                     <div class="flex justify-center gap-6">
                         <a href="https://www.instagram.com/alerafl_/" class="text-pink-500 hover:text-pink-700" target="_blank">
                             <i class="fab fa-instagram text-3xl"></i>
@@ -122,7 +122,7 @@
                 <div class="text-center">
                     <img src="https://pbs.twimg.com/media/GfKDqHXbIAASyEY?format=jpg&name=medium" alt="Daniel" class="w-32 h-32 rounded-full border-4 border-gray-300 shadow-lg object-cover mx-auto mb-4">
                     <p class="text-xl font-medium text-gray-700 mb-2">Daniel Daud Alberthus</p>
-                    <p class="text-gray-600 mb-4">ADMINISTRATOR</p>
+                    <p class="text-gray-600 mb-4">Frontend & Backend</p>
                     <div class="flex justify-center gap-6">
                         <a href="https://www.instagram.com/iel.yel/" class="text-pink-500 hover:text-pink-700" target="_blank">
                             <i class="fab fa-instagram text-3xl"></i>
@@ -136,7 +136,7 @@
                 <div class="text-center">
                     <img src="https://pbs.twimg.com/media/GfKDiObbsAAo3Rl?format=jpg&name=4096x4096" alt="Raja" class="w-32 h-32 rounded-full border-4 border-gray-300 shadow-lg object-cover mx-auto mb-4">
                     <p class="text-xl font-medium text-gray-700 mb-2">Raja Walidain</p>
-                    <p class="text-gray-600 mb-4">ADMINISTRATOR</p>
+                    <p class="text-gray-600 mb-4">AFK</p>
                     <div class="flex justify-center gap-6">
                         <a href="https://www.instagram.com/kajenavaa/" class="text-pink-500 hover:text-pink-700" target="_blank">
                             <i class="fab fa-instagram text-3xl"></i>
