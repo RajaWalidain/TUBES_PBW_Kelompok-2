@@ -42,6 +42,10 @@ Route::post('/users/course', [Controllers\UserController::class, 'course'])->nam
 
 Route::get('/courses/{id}', [Controllers\CourseController::class, 'showCourse'])->name('courses.show');
 Route::get('/courses/{id}/payment', [Controllers\CourseController::class, 'showPayment'])->name('courses.payment');
+Route::delete('/courses/{course}', [Controllers\CourseController::class, 'destroy'])
+    ->name('courses.destroy')
+    ->middleware('role:admin'); // Buat middleware jika belum ada
+
 
 
 Route::get('admin', function(){

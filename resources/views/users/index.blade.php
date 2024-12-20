@@ -6,11 +6,11 @@
                 <x-section-title>
                     <x-slot name="title">Users</x-slot>
                     <x-slot name="description">
-                        A list of all the users in your account including their name, title, email and role.
+                        A list of all the users Includes details like name, email, and creation date.
                     </x-slot>
                 </x-section-title>
                 <div class="mt-4 sm:mt-0">
-                    <x-button class="bg-blue-500 hover:text-black hover:bg-white" as="a" href="/users/create">
+                    <x-button class="bg-blue-600 hover:bg-blue-300" as="a" href="/users/create">
                         Add user
                     </x-button>
                 </div>

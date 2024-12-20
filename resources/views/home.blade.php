@@ -2,17 +2,17 @@
     <x-slot name='heading'>Home</x-slot>
     <section id="home" class="w-full mt-16">
         <div class="w-full text-center text-black my-5">
-            <h1 class="text-5xl font-bold">Programming Tutors</h1>
-            <h2 class="text-xl my-6">Tempat Belajar untuk Menjadi Software Development Expert yang Zaman Now Banget!</h2>
+            <h1 class="text-5xl font-bold pt-8">Programming Tutors</h1>
+            <h2 class="text-xl my-6">Platform Belajar Modern yang Bikin Kamu Jadi Software Development Expert dengan Gaya Anak Gen Z Abis!</h2>
             <div>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg"><a href="/course">Gabung Kelas Online!</a></button>
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
             <div class="max-w-lg shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fa-solid fa-book-open text-gray-500 fa-5x mb-6"></i>
+                <i class="fa-solid fa-book-open text-indigo-600 fa-5x mb-6"></i>
                 <div class="p-4">
-                    <p class="font-bold text-lg md:text-xl mb-6">Panduan Terstruktur</p>
+                    <p class="font-bold text-indigo-600 text-lg md:text-xl mb-6">Panduan Terstruktur</p>
                     <hr class="text-gray-600 mb-2">
                     <p class="text-gray-600 text-base mb-2">Semua materi di sini disusun dengan alur pembelajaran yang terorganisir. Setiap kursus dirancang untuk membawa Anda dari pemula hingga mahir, tanpa kebingungan. Ikuti langkah-langkahnya, dan capai tujuan belajar Anda dengan mudah.</p>
                 </div>
@@ -20,7 +20,7 @@
             <div class="max-w-lg shadow-lg px-4 py-4 bg-white m-3 text-center">
                 <i class="fa-brands fa-react text-blue-500 fa-5x mb-6"></i>
                 <div class="p-4">
-                    <p class="font-bold text-lg md:text-xl mb-6">Materi Selalu Terbaru</p>
+                    <p class="font-bold text-blue-500 text-lg md:text-xl mb-6">Materi Selalu Terbaru</p>
                     <hr class="text-gray-600 mb-2">
                     <p class="text-gray-600 text-base mb-2">Kami selalu menyediakan materi yang relevan dengan tren teknologi terkini. Dengan pembaruan berkala, Anda akan selalu mendapatkan pengetahuan yang paling mutakhir dan relevan di bidangnya.</p>
                 </div>
@@ -28,7 +28,7 @@
             <div class="max-w-lg shadow-lg px-4 py-4 bg-white m-3 text-center">
                 <i class="fa-solid fa-user-graduate text-red-500 fa-5x mb-6"></i>
                 <div class="p-4">
-                    <p class="font-bold text-lg md:text-xl mb-6">Pengajar Profesional</p>
+                    <p class="font-bold text-red-600 text-lg md:text-xl mb-6">Pengajar Profesional</p>
                     <hr class="text-gray-600 mb-2">
                     <p class="text-gray-600 text-base mb-2">Instruktur kami adalah ahli yang telah berpengalaman langsung di industri. Selain menguasai teori, mereka juga membagikan praktik terbaik dan wawasan berharga yang tidak bisa Anda temukan di tempat lain.</p>
                 </div>
@@ -42,22 +42,22 @@
             <h2 class="text-3xl font-bold mb-6">Bidang Keahlian yang Bisa Anda Pelajari</h2>
             <div class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Web development</p>
+                    <p class="font-semibold text-blue-500">Web development</p>
                 </div>
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Mobile development</p>
+                    <p class="font-semibold text-green-600">Mobile development</p>
                 </div>
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Software development</p>
+                    <p class="font-semibold text-red-600">Software development</p>
                 </div>
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Data Analyst</p>
+                    <p class="font-semibold text-pink-500">Data Analyst</p>
                 </div>
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Cyber Security</p>
+                    <p class="font-semibold text-indigo-700">Cyber Security</p>
                 </div>
                 <div class="p-4 bg-white shadow-md rounded-lg text-center">
-                    <p class="font-semibold text-gray-700">Artificial Intelligence</p>
+                    <p class="font-semibold text-yellow-500">Artificial Intelligence</p>
                 </div>
             </div>
         </div>
@@ -151,7 +151,7 @@
 
         <div class="text-center" id="contact-action">
             <p class="text-lg text-gray-700 mb-4">Kami siap membantu Anda!</p>
-            <p class="text-sm text-gray-500 mb-6">Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami melalui Media Sosial kami yang tercantum diatas.</p>
+            <p class="text-sm text-gray-500 mb-6">Jika memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami melalui Media Sosial kami yang tercantum diatas.</p>
             <a href="javascript:void(0)" onclick="changeText()" class="inline-block bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-600">Hubungi Kami</a>
         </div>
     </div>

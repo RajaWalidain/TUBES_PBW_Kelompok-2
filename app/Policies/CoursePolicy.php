@@ -17,6 +17,13 @@ class CoursePolicy
     // }
 
     public function destroy(User $user, Course $course) {
-        return $this->update($user,$course);
+    // Izinkan jika user adalah admin
+    if ($user->hasRole('admin')) {
+        return true;
     }
+
+    // Jika bukan admin, hanya izinkan pemilik course
+    return $user->id === $course->user_id;
+}
+
 }

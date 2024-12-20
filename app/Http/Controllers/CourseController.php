@@ -6,6 +6,7 @@ use App\Http\Requests\CourseRequest;
 use App\Models\course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
@@ -65,10 +66,17 @@ class CourseController extends Controller
         return to_route('courses.index');
     }
 
-    public function destroy(Course $course)
-    {
+    public function destroy(Course $course){
+        Gate::authorize('destroy', $course);
+        if ($course->image && Storage::exists($course->image)) {
+            Storage::delete($course->image);
+        }
 
+        $course->delete();
+
+        return redirect()->route('courses.index')->with('success', 'Course berhasil dihapus.');
     }
+
 
     public function show($id){
         $course = Course::findOrFail($id);

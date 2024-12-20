@@ -35,7 +35,7 @@
 
                     {{-- @if (auth()->user()->hasRole('admin')) --}}
                     @if (auth()->check() && auth()->user()->hasRole('admin'))
-                        <x-nav-link class="text-red-600" :href="route('users.index')" :active="request()->routeIs('users.index')">
+                        <x-nav-link class="text-red-500" :href="route('users.index')" :active="request()->routeIs('users.index')">
                             {{ __('Users') }}
                         </x-nav-link>
                     @endif
