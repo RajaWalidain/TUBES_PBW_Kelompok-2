@@ -11,9 +11,8 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 ## Penjelasan Actor, Use Case, ERD, Class Diagram, Dan Struktur Website. 
 
 ### Actor yang menggunakan:
-1. Teacher
-2. Student
-3. Admin
+1. Student
+2. Admin
 
 
 ### Usecase
