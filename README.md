@@ -18,7 +18,7 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 ### Usecase
 ![WhatsApp Image 2025-01-07 at 23 28 22_92214504](https://github.com/user-attachments/assets/881fb0a6-7a75-4697-8d6a-71c47ed8a449)
 
-Usecase tersebut menggambarkan sistem pembelajaran online dengan 3 pengguna utama: Pelajar, Admin, dan Pengajar. Pelajar dapat mendaftar kursus, mengakses materi, dan mengerjakan tugas. Admin mengelola pengguna dan kursus serta sistem login. Pengajar bertugas membuat kursus, mengunggah materi, dan memberikan tugas serta penilaian. Semua aktivitas terhubung melalui sistem autentikasi.
+Diagram di atas merupakan representasi use case dari sistem e-learning yang melibatkan dua aktor utama, yaitu User dan Admin, dengan berbagai fungsi yang dapat diakses masing-masing. User memiliki kemampuan untuk mendaftar ke sistem (Register), masuk menggunakan akun yang sudah dibuat (Login), melihat daftar kursus yang tersedia (View Courses), serta mendaftar ke kursus pilihan (Enroll in Course). Sementara itu, Admin memiliki peran yang lebih luas dalam mengelola sistem, termasuk menambahkan pengguna baru (Add User), melihat daftar pengguna (View Users), serta mengelola kursus melalui fitur membuat kursus baru (Create Course), mengedit informasi kursus (Edit Course), menghapus kursus (Delete Course), dan memperbarui kursus (Update Course). Diagram ini mencerminkan pembagian peran yang jelas, di mana User berfokus pada penggunaan layanan, sedangkan Admin bertanggung jawab atas pengelolaan sistem secara keseluruhan.
 
 ### ERD
 ![WhatsApp Image 2025-01-07 at 23 26 49_b738297d](https://github.com/user-attachments/assets/0ddd7c47-eedf-44e8-9251-86714ba95e52)
