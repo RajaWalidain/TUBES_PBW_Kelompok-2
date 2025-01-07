@@ -26,6 +26,7 @@ ERD ini menampilkan sistem pembelajaran online dengan 5 entitas utama: User (den
 
 
 ### Class Diagram
-![WhatsApp Image 2025-01-07 at 22 57 11_6d596e24](https://github.com/user-attachments/assets/a9607c9d-8791-415d-ae09-005d093f0ab9)
+![WhatsApp Image 2025-01-07 at 23 07 59_68fb3dc3](https://github.com/user-attachments/assets/cc8d9e11-d156-43e2-af5d-20ad1f2cc857)
+
 
 Class Diagram ini menggambarkan sistem pembelajaran online dengan 6 kelas utama yang saling terhubung: User (pengguna sistem), Course (mata pelajaran), Materi (konten pembelajaran), Tugas (penugasan), Pendaftaran (registrasi kursus), dan Pengumpulan (submission tugas). User dapat mengajar atau mengikuti Course, di mana setiap Course memiliki Materi dan Tugas. Siswa dapat mendaftar ke Course melalui kelas Pendaftaran dan mengumpulkan tugas melalui kelas Pengumpulan. Setiap kelas memiliki atribut yang diperlukan (seperti ID, nama, tanggal, dll) dan method-method untuk mengelola datanya (seperti create, update, delete).
