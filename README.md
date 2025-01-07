@@ -21,7 +21,8 @@ E-learning telah menjadi alternatif utama dalam pembelajaran, namun pengembangan
 Usecase tersebut menggambarkan sistem pembelajaran online dengan 3 pengguna utama: Pelajar, Admin, dan Pengajar. Pelajar dapat mendaftar kursus, mengakses materi, dan mengerjakan tugas. Admin mengelola pengguna dan kursus serta sistem login. Pengajar bertugas membuat kursus, mengunggah materi, dan memberikan tugas serta penilaian. Semua aktivitas terhubung melalui sistem autentikasi.
 
 ### ERD
-![ERD](https://github.com/user-attachments/assets/9e102313-f5d3-4f5e-b80b-4bdc999c493a)
+![WhatsApp Image 2025-01-07 at 23 26 49_b738297d](https://github.com/user-attachments/assets/0ddd7c47-eedf-44e8-9251-86714ba95e52)
+
 ERD ini menampilkan sistem pembelajaran online dengan 5 entitas utama: User (dengan atribut seperti UserID, nama, email, password, no HP, dan peran sebagai pengajar/pelajar/admin), Course (dengan detail courseID, judul, deskripsi, tanggal mulai/selesai, dan instrukturID), Materi (berisi materiID, courseID, judul, konten, dan tanggal unggah), Tugas (mencakup tugasID, courseID, judul, deskripsi, dan deadline), serta entitas penghubung berupa Pendaftaran (untuk mencatat registrasi course) dan Pengumpulan (untuk submission tugas). Setiap entitas saling terhubung melalui relasi yang menunjukkan interaksi antar komponen dalam sistem, seperti user memiliki course, course memiliki materi dan tugas, serta user melakukan pendaftaran dan pengumpulan tugas.
 
 
